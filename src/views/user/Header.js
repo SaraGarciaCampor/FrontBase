@@ -74,59 +74,21 @@ function Header({ className, onTimeChange, ...rest }) {
             to="/app"
             component={RouterLink}
           >
-            Dashboard
+            Home
           </Link>
           <Typography
             variant="body1"
             color="textPrimary"
           >
-            LeaderBoard
+            User
           </Typography>
         </Breadcrumbs>
         <Typography
           variant="h3"
           color="textPrimary"
         >
-          Finance Overview
+          User Creation
         </Typography>
-      </Grid>
-      <Grid item>
-        <Button
-          ref={actionRef}
-          onClick={() => setMenuOpen(true)}
-        >
-          <SvgIcon
-            fontSize="small"
-            className={classes.actionIcon}
-          >
-            <CalendarIcon />
-          </SvgIcon>
-          {timeRange}
-        </Button>
-        <Menu
-          anchorEl={actionRef.current}
-          onClose={() => setMenuOpen(false)}
-          open={isMenuOpen}
-          PaperProps={{ className: classes.menu }}
-          getContentAnchorEl={null}
-          anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'center'
-          }}
-          transformOrigin={{
-            vertical: 'top',
-            horizontal: 'center'
-          }}
-        >
-          {timeRanges.map((t) => (
-            <MenuItem
-              key={t.value}
-              onClick={() => timeChange(t.text)}
-            >
-              {t.text}
-            </MenuItem>
-          ))}
-        </Menu>
       </Grid>
     </Grid>
   );
