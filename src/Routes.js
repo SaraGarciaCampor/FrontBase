@@ -38,6 +38,11 @@ const routesConfig = [
         component: lazy(() => import('./views/user'))
       },
       {
+        exact: true,
+        path: '/app/menu',
+        component: lazy(() => import('./views/menu'))
+      },
+      {
         component: () => <Redirect to="/404" />
       }
     ]
