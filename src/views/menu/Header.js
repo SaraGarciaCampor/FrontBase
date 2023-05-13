@@ -80,7 +80,7 @@ function Header({ className, onTimeChange, ...rest }) {
             variant="body1"
             color="textPrimary"
           >
-            LeaderBoard
+            Reports
           </Typography>
         </Breadcrumbs>
         <Typography
