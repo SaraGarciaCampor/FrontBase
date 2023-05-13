@@ -232,27 +232,6 @@ const navConfig = [
     ]
   },
   {
-    subheader: 'Pages',
-    href: '/app/pages',
-    items: [
-      {
-        title: 'Account',
-        href: '/app/account',
-        icon: UserIcon
-      },
-      {
-        title: 'Error',
-        href: '/404',
-        icon: AlertCircleIcon
-      },
-      {
-        title: 'Pricing',
-        href: '/pricing',
-        icon: DollarSignIcon
-      }
-    ]
-  },
-  {
     subheader: 'Extra',
     items: [
       {

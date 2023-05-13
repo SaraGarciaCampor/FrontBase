@@ -24,14 +24,6 @@ const useStyles = makeStyles((theme) => ({
 
 function UserView() {
   const classes = useStyles();
-  const [time, setTime] = useState('Last 30 days');
-
-
-  const handleTimeChange = (f) => {
-    setTime(f);
-  };
-
-  console.log(time);
   return (
     <Page
       className={classes.root}
@@ -41,7 +33,7 @@ function UserView() {
         maxWidth={false}
         className={classes.container}
       >
-        <Header onTimeChange={handleTimeChange} />
+        <Header />
         <Grid
           container
           spacing={3}
