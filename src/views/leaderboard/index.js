@@ -5,9 +5,7 @@ import {
   makeStyles
 } from '@material-ui/core';
 import Page from 'src/components/Page';
-import FinancialStats from './FinancialStats';
 import Header from './Header';
-import TableTest from './LatestOrders';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function DashboardAlternativeView() {
+function LeaderBoardView() {
   const classes = useStyles();
   const [time, setTime] = useState('Last 30 days');
 
@@ -52,20 +50,16 @@ function DashboardAlternativeView() {
             item
             lg={12}
             xs={12}
-          >
-            <FinancialStats timeFrame={time} />
-          </Grid>
+          />
           <Grid
             item
             lg={12}
             xs={12}
-          >
-            <TableTest />
-          </Grid>
+          />
         </Grid>
       </Container>
     </Page>
   );
 }
 
-export default DashboardAlternativeView;
+export default LeaderBoardView;

@@ -23,6 +23,11 @@ const routesConfig = [
         component: lazy(() => import('./views/reports/DashboardAlternativeView'))
       },
       {
+        exact: true,
+        path: '/app/leaderboard',
+        component: lazy(() => import('./views/leaderboard'))
+      },
+      {
         component: () => <Redirect to="/404" />
       }
     ]
