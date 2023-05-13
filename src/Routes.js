@@ -28,6 +28,16 @@ const routesConfig = [
         component: lazy(() => import('./views/leaderboard'))
       },
       {
+        exact: true,
+        path: '/app/quiz',
+        component: lazy(() => import('./views/quiz'))
+      },
+      {
+        exact: true,
+        path: '/app/user',
+        component: lazy(() => import('./views/user'))
+      },
+      {
         component: () => <Redirect to="/404" />
       }
     ]

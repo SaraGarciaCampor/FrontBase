@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function LeaderBoardView() {
+function UserView() {
   const classes = useStyles();
   const [time, setTime] = useState('Last 30 days');
 
@@ -35,7 +35,7 @@ function LeaderBoardView() {
   return (
     <Page
       className={classes.root}
-      title="Leaderboard View"
+      title="User View"
     >
       <Container
         maxWidth={false}
@@ -62,4 +62,4 @@ function LeaderBoardView() {
   );
 }
 
-export default LeaderBoardView;
+export default UserView;
