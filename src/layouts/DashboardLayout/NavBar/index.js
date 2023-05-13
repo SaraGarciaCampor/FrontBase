@@ -46,232 +46,65 @@ import NavItem from './NavItem';
 
 const navConfig = [
   {
-    subheader: 'Reports',
+    subheader: 'Vueling',
     items: [
       {
-        title: 'Dashboard',
+        title: 'Home',
         icon: PieChartIcon,
         href: '/app/reports/dashboard'
       },
       {
-        title: 'Dashboard Alternative',
+        title: 'Your user',
         icon: BarChartIcon,
         href: '/app/reports/dashboard-alternative'
-      }
-    ]
-  },
-  {
-    subheader: 'Management',
-    items: [
+      },
       {
-        title: 'Customers',
+        title: 'Leaderboard',
+        icon: BarChartIcon,
+        href: '/app/reports/dashboard-alternative'
+      },
+      {
+        title: 'Games',
         icon: UsersIcon,
         href: '/app/management/customers',
         items: [
           {
-            title: 'List Customers',
-            href: '/app/management/customers'
+            title: 'Games Origin',
+            icon: UsersIcon,
+            href: '/app/management/customers',
+            items: [
+              {
+                title: 'Quiz',
+                href: '/app/management/customers'
+              },
+              {
+                title: 'Dino',
+                href: '/app/management/customers/1'
+              },
+              {
+                title: 'Papers please',
+                href: '/app/management/customers/1/edit'
+              }
+            ]
           },
           {
-            title: 'View Customer',
-            href: '/app/management/customers/1'
-          },
-          {
-            title: 'Edit Customer',
-            href: '/app/management/customers/1/edit'
-          }
-        ]
-      },
-      {
-        title: 'Products',
-        icon: ShoppingCartIcon,
-        href: '/app/management/products',
-        items: [
-          {
-            title: 'List Products',
-            href: '/app/management/products'
-          },
-          {
-            title: 'Create Product',
-            href: '/app/management/products/create'
-          }
-        ]
-      },
-      {
-        title: 'Orders',
-        icon: FolderIcon,
-        href: '/app/management/orders',
-        items: [
-          {
-            title: 'List Orders',
-            href: '/app/management/orders'
-          },
-          {
-            title: 'View Order',
-            href: '/app/management/orders/1'
-          }
-        ]
-      },
-      {
-        title: 'Invoices',
-        icon: ReceiptIcon,
-        href: '/app/management/invoices',
-        items: [
-          {
-            title: 'List Invoices',
-            href: '/app/management/invoices'
-          },
-          {
-            title: 'View Invoice',
-            href: '/app/management/invoices/1'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    subheader: 'Applications',
-    items: [
-      {
-        title: 'Projects Platform',
-        href: '/app/projects',
-        icon: BriefcaseIcon,
-        items: [
-          {
-            title: 'Overview',
-            href: '/app/projects/overview'
-          },
-          {
-            title: 'Browse Projects',
-            href: '/app/projects/browse'
-          },
-          {
-            title: 'Create Project',
-            href: '/app/projects/create'
-          },
-          {
-            title: 'View Project',
-            href: '/app/projects/1'
-          }
-        ]
-      },
-      {
-        title: 'Social Platform',
-        href: '/app/social',
-        icon: ShareIcon,
-        items: [
-          {
-            title: 'Profile',
-            href: '/app/social/profile'
-          },
-          {
-            title: 'Feed',
-            href: '/app/social/feed'
-          }
-        ]
-      },
-      {
-        title: 'Kanban',
-        href: '/app/kanban',
-        icon: TrelloIcon
-      },
-      {
-        title: 'Mail',
-        href: '/app/mail',
-        icon: MailIcon,
-        info: () => (
-          <Chip
-            color="secondary"
-            size="small"
-            label="Updated"
-          />
-        )
-      },
-      {
-        title: 'Chat',
-        href: '/app/chat',
-        icon: MessageCircleIcon,
-        info: () => (
-          <Chip
-            color="secondary"
-            size="small"
-            label="Updated"
-          />
-        )
-      },
-      {
-        title: 'Calendar',
-        href: '/app/calendar',
-        icon: CalendarIcon
-      },
-    ]
-  },
-  {
-    subheader: 'Auth',
-    items: [
-      {
-        title: 'Login',
-        href: '/login-unprotected',
-        icon: LockIcon
-      },
-      {
-        title: 'Register',
-        href: '/register-unprotected',
-        icon: UserPlusIcon
-      },
-      {
-        title: 'Login: Guest Protected',
-        href: '/login',
-        icon: ShieldIcon
-      },
-      {
-        title: 'Register: Guest Protected',
-        href: '/register',
-        icon: ShieldIcon
-      }
-    ]
-  },
-  {
-    subheader: 'Extra',
-    items: [
-      {
-        title: 'Charts',
-        href: '/app/extra/charts',
-        icon: BarChartIcon,
-        items: [
-          {
-            title: 'Apex Charts',
-            href: '/app/extra/charts/apex'
-          }
-        ]
-      },
-      {
-        title: 'Forms',
-        href: '/app/extra/forms',
-        icon: EditIcon,
-        items: [
-          {
-            title: 'Formik',
-            href: '/app/extra/forms/formik'
-          },
-          {
-            title: 'Redux Forms',
-            href: '/app/extra/forms/redux'
-          },
-        ]
-      },
-      {
-        title: 'Editors',
-        href: '/app/extra/editors',
-        icon: LayoutIcon,
-        items: [
-          {
-            title: 'DraftJS Editor',
-            href: '/app/extra/editors/draft-js'
-          },
-          {
-            title: 'Quill Editor',
-            href: '/app/extra/editors/quill'
+            title: 'Games Destination',
+            icon: UsersIcon,
+            href: '/app/management/customers',
+            items: [
+              {
+                title: 'Quiz',
+                href: '/app/management/customers'
+              },
+              {
+                title: 'Dino',
+                href: '/app/management/customers/1'
+              },
+              {
+                title: 'Papers please',
+                href: '/app/management/customers/1/edit'
+              }
+            ]
           }
         ]
       }
@@ -435,28 +268,6 @@ function NavBar({ openMobile, onMobileClose, }) {
           ))}
         </Box>
         <Divider />
-        <Box p={2}>
-          <Box
-            p={2}
-            borderRadius="borderRadius"
-            bgcolor="background.dark"
-          >
-            <Typography
-              variant="h6"
-              color="textPrimary"
-            >
-              Need Help?
-            </Typography>
-            <Link
-              variant="subtitle1"
-              color="secondary"
-              component={RouterLink}
-              to="/docs"
-            >
-              Check our docs
-            </Link>
-          </Box>
-        </Box>
       </PerfectScrollbar>
     </Box>
   );

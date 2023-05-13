@@ -39,7 +39,7 @@ const routesConfig = [
       },
       {
         exact: true,
-        path: '/app/menu',
+        path: '/app',
         component: lazy(() => import('./views/menu'))
       },
       {
